@@ -1,42 +1,59 @@
-from nba_api.stats.endpoints import playergamelog
-from nba_api.stats.static import players
-from datetime import datetime
+import requests
 import json
+from datetime import datetime
 
-# Find Jokic
-jokic = next(p for p in players.find_players_by_full_name("Nikola Jokic"))
+URL = "https://stats.nba.com/stats/playergamelog"
 
-# Fetch game logs
-gamelog = playergamelog.PlayerGameLog(
-    player_id=jokic["id"],
-    season="2025-26"  # adjust if needed
-)
+HEADERS = {
+    "Host": "stats.nba.com",
+    "Connection": "keep-alive",
+    "Accept": "application/json, text/plain, */*",
+    "x-nba-stats-token": "true",
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+    "x-nba-stats-origin": "stats",
+    "Referer": "https://www.nba.com/",
+    "Accept-Encoding": "gzip, deflate, br",
+    "Accept-Language": "en-US,en;q=0.9",
+}
 
-df = gamelog.get_data_frames()[0]
+PARAMS = {
+    "PlayerID": "203999",      # Nikola Jokic
+    "Season": "2025-26",
+    "SeasonType": "Regular Season"
+}
+
+response = requests.get(URL, headers=HEADERS, params=PARAMS, timeout=30)
+response.raise_for_status()
+
+data = response.json()
+rows = data["resultSets"][0]["rowSet"]
+headers = data["resultSets"][0]["headers"]
 
 games = []
 
-for _, row in df.iterrows():
-    pts = int(row.PTS)
-    reb = int(row.REB)
-    ast = int(row.AST)
+for row in rows:
+    game = dict(zip(headers, row))
+
+    pts = int(game["PTS"])
+    reb = int(game["REB"])
+    ast = int(game["AST"])
 
     games.append({
-        "date": row.GAME_DATE,
-        "opponent": row.MATCHUP.split(" ")[-1],
-        "home": "vs." in row.MATCHUP,
-        "minutes": row.MIN,
+        "date": game["GAME_DATE"],  # e.g. "Jan 30, 2026"
+        "opponent": game["MATCHUP"].split(" ")[-1],
+        "home": "vs." in game["MATCHUP"],
+        "minutes": game["MIN"],
         "points": pts,
         "rebounds": reb,
         "assists": ast,
-        "steals": int(row.STL),
-        "blocks": int(row.BLK),
-        "turnovers": int(row.TOV),
-        "fg_pct": float(row.FG_PCT),
+        "steals": int(game["STL"]),
+        "blocks": int(game["BLK"]),
+        "turnovers": int(game["TOV"]),
+        "fg_pct": float(game["FG_PCT"]),
         "triple_double": sum(x >= 10 for x in [pts, reb, ast]) >= 3
     })
 
-# newest first
+# ✅ Sort newest → oldest
 games.sort(
     key=lambda g: datetime.strptime(g["date"], "%b %d, %Y"),
     reverse=True
