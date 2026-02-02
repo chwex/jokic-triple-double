@@ -1,5 +1,6 @@
 import requests
 import json
+import time
 from datetime import datetime
 
 URL = "https://stats.nba.com/stats/playergamelog"
@@ -22,24 +23,41 @@ PARAMS = {
     "SeasonType": "Regular Season"
 }
 
-response = requests.get(URL, headers=HEADERS, params=PARAMS, timeout=30)
-response.raise_for_status()
+def fetch_with_retry(retries=3, timeout=60):
+    for attempt in range(1, retries + 1):
+        try:
+            print(f"NBA API attempt {attempt}")
+            response = requests.get(
+                URL,
+                headers=HEADERS,
+                params=PARAMS,
+                timeout=timeout
+            )
+            response.raise_for_status()
+            return response.json()
+        except Exception as e:
+            if attempt == retries:
+                raise
+            sleep_time = attempt * 5
+            print(f"Retrying in {sleep_time}s due to: {e}")
+            time.sleep(sleep_time)
 
-data = response.json()
+data = fetch_with_retry()
+
 rows = data["resultSets"][0]["rowSet"]
-headers = data["resultSets"][0]["headers"]
+cols = data["resultSets"][0]["headers"]
 
 games = []
 
 for row in rows:
-    game = dict(zip(headers, row))
+    game = dict(zip(cols, row))
 
     pts = int(game["PTS"])
     reb = int(game["REB"])
     ast = int(game["AST"])
 
     games.append({
-        "date": game["GAME_DATE"],  # e.g. "Jan 30, 2026"
+        "date": game["GAME_DATE"],  # "Jan 30, 2026"
         "opponent": game["MATCHUP"].split(" ")[-1],
         "home": "vs." in game["MATCHUP"],
         "minutes": game["MIN"],
@@ -53,7 +71,7 @@ for row in rows:
         "triple_double": sum(x >= 10 for x in [pts, reb, ast]) >= 3
     })
 
-# ✅ Sort newest → oldest
+# Sort newest → oldest
 games.sort(
     key=lambda g: datetime.strptime(g["date"], "%b %d, %Y"),
     reverse=True
