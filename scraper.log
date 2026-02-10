@@ -1,0 +1,41 @@
+===== Mon Feb  9 22:58:29 CST 2026 =====
+Traceback (most recent call last):
+  File "/home/chwex/projects/jokic-triple-double/scripts/scrape_jokic.py", line 1, in <module>
+    import requests
+ModuleNotFoundError: No module named 'requests'
+===== Mon Feb  9 23:02:45 CST 2026 =====
+Traceback (most recent call last):
+  File "/home/chwex/projects/jokic-triple-double/scripts/scrape_jokic.py", line 1, in <module>
+    import requests
+ModuleNotFoundError: No module named 'requests'
+===== Mon Feb  9 23:03:59 CST 2026 =====
+Traceback (most recent call last):
+  File "/home/chwex/projects/jokic-triple-double/scripts/scrape_jokic.py", line 1, in <module>
+    import requests
+ModuleNotFoundError: No module named 'requests'
+===== Mon Feb  9 23:05:00 CST 2026 =====
+NBA API attempt 1
+Saved 38 games
+Changes detected, committing...
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: empty ident name (for <chwex@JARVIS.localdomain>) not allowed
+===== Mon Feb  9 23:08:24 CST 2026 =====
+NBA API attempt 1
+Saved 38 games
+Changes detected, committing...
+[main 358feea] Update Jokic game data (2026-02-09)
+ 1 file changed, 14 insertions(+)
+To github.com:chwex/jokic-triple-double.git
+   c111d9e..358feea  main -> main
+Push completed.
