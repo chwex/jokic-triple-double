@@ -1,5 +1,19 @@
 [
   {
+    "date": "Feb 09, 2026",
+    "opponent": "CLE",
+    "home": true,
+    "minutes": 33,
+    "points": 22,
+    "rebounds": 14,
+    "assists": 11,
+    "steals": 2,
+    "blocks": 1,
+    "turnovers": 7,
+    "fg_pct": 0.545,
+    "triple_double": true
+  },
+  {
     "date": "Feb 07, 2026",
     "opponent": "CHI",
     "home": false,
