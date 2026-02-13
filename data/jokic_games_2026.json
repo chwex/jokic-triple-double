@@ -1,5 +1,19 @@
 [
   {
+    "date": "Feb 11, 2026",
+    "opponent": "MEM",
+    "home": true,
+    "minutes": 34,
+    "points": 26,
+    "rebounds": 15,
+    "assists": 11,
+    "steals": 0,
+    "blocks": 0,
+    "turnovers": 9,
+    "fg_pct": 0.471,
+    "triple_double": true
+  },
+  {
     "date": "Feb 09, 2026",
     "opponent": "CLE",
     "home": true,
