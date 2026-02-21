@@ -1,5 +1,19 @@
 [
   {
+    "date": "Feb 19, 2026",
+    "opponent": "LAC",
+    "home": false,
+    "minutes": 36,
+    "points": 22,
+    "rebounds": 17,
+    "assists": 6,
+    "steals": 0,
+    "blocks": 0,
+    "turnovers": 6,
+    "fg_pct": 0.409,
+    "triple_double": false
+  },
+  {
     "date": "Feb 11, 2026",
     "opponent": "MEM",
     "home": true,
