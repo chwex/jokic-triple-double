@@ -1,5 +1,33 @@
 [
   {
+    "date": "Feb 22, 2026",
+    "opponent": "GSW",
+    "home": false,
+    "minutes": 36,
+    "points": 35,
+    "rebounds": 20,
+    "assists": 12,
+    "steals": 3,
+    "blocks": 2,
+    "turnovers": 5,
+    "fg_pct": 0.524,
+    "triple_double": true
+  },
+  {
+    "date": "Feb 20, 2026",
+    "opponent": "POR",
+    "home": false,
+    "minutes": 29,
+    "points": 32,
+    "rebounds": 9,
+    "assists": 7,
+    "steals": 4,
+    "blocks": 0,
+    "turnovers": 2,
+    "fg_pct": 0.667,
+    "triple_double": false
+  },
+  {
     "date": "Feb 19, 2026",
     "opponent": "LAC",
     "home": false,
