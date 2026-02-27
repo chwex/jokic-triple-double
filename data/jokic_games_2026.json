@@ -1,5 +1,19 @@
 [
   {
+    "date": "Feb 25, 2026",
+    "opponent": "BOS",
+    "home": true,
+    "minutes": 33,
+    "points": 30,
+    "rebounds": 12,
+    "assists": 6,
+    "steals": 0,
+    "blocks": 0,
+    "turnovers": 1,
+    "fg_pct": 0.393,
+    "triple_double": false
+  },
+  {
     "date": "Feb 22, 2026",
     "opponent": "GSW",
     "home": false,
