@@ -1,5 +1,19 @@
 [
   {
+    "date": "Mar 02, 2026",
+    "opponent": "UTA",
+    "home": false,
+    "minutes": 36,
+    "points": 22,
+    "rebounds": 12,
+    "assists": 5,
+    "steals": 0,
+    "blocks": 2,
+    "turnovers": 3,
+    "fg_pct": 0.545,
+    "triple_double": false
+  },
+  {
     "date": "Mar 01, 2026",
     "opponent": "MIN",
     "home": true,
