@@ -1,5 +1,19 @@
 [
   {
+    "date": "Mar 05, 2026",
+    "opponent": "LAL",
+    "home": true,
+    "minutes": 38,
+    "points": 28,
+    "rebounds": 12,
+    "assists": 13,
+    "steals": 1,
+    "blocks": 1,
+    "turnovers": 9,
+    "fg_pct": 0.667,
+    "triple_double": true
+  },
+  {
     "date": "Mar 02, 2026",
     "opponent": "UTA",
     "home": false,
