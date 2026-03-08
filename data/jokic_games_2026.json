@@ -1,5 +1,19 @@
 [
   {
+    "date": "Mar 06, 2026",
+    "opponent": "NYK",
+    "home": true,
+    "minutes": 31,
+    "points": 38,
+    "rebounds": 8,
+    "assists": 5,
+    "steals": 2,
+    "blocks": 0,
+    "turnovers": 3,
+    "fg_pct": 0.667,
+    "triple_double": false
+  },
+  {
     "date": "Mar 05, 2026",
     "opponent": "LAL",
     "home": true,
