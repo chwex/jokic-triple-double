@@ -1,5 +1,33 @@
 [
   {
+    "date": "Mar 18, 2026",
+    "opponent": "MEM",
+    "home": false,
+    "minutes": 39,
+    "points": 29,
+    "rebounds": 14,
+    "assists": 9,
+    "steals": 1,
+    "blocks": 3,
+    "turnovers": 10,
+    "fg_pct": 0.579,
+    "triple_double": false
+  },
+  {
+    "date": "Mar 17, 2026",
+    "opponent": "PHI",
+    "home": true,
+    "minutes": 25,
+    "points": 8,
+    "rebounds": 7,
+    "assists": 14,
+    "steals": 0,
+    "blocks": 0,
+    "turnovers": 5,
+    "fg_pct": 0.571,
+    "triple_double": false
+  },
+  {
     "date": "Mar 14, 2026",
     "opponent": "LAL",
     "home": false,
