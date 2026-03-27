@@ -1,19 +1,5 @@
 [
   {
-    "date": "Mar 24, 2026",
-    "opponent": "PHX",
-    "home": false,
-    "minutes": 35,
-    "points": 23,
-    "rebounds": 17,
-    "assists": 17,
-    "steals": 0,
-    "blocks": 0,
-    "turnovers": 2,
-    "fg_pct": 0.563,
-    "triple_double": true
-  },
-  {
     "date": "Mar 22, 2026",
     "opponent": "POR",
     "home": true,
