@@ -1,5 +1,47 @@
 [
   {
+    "date": "Mar 27, 2026",
+    "opponent": "UTA",
+    "home": true,
+    "minutes": 39,
+    "points": 33,
+    "rebounds": 15,
+    "assists": 12,
+    "steals": 1,
+    "blocks": 0,
+    "turnovers": 7,
+    "fg_pct": 0.813,
+    "triple_double": true
+  },
+  {
+    "date": "Mar 25, 2026",
+    "opponent": "DAL",
+    "home": true,
+    "minutes": 38,
+    "points": 23,
+    "rebounds": 21,
+    "assists": 19,
+    "steals": 1,
+    "blocks": 0,
+    "turnovers": 1,
+    "fg_pct": 0.421,
+    "triple_double": true
+  },
+  {
+    "date": "Mar 24, 2026",
+    "opponent": "PHX",
+    "home": false,
+    "minutes": 35,
+    "points": 23,
+    "rebounds": 17,
+    "assists": 17,
+    "steals": 0,
+    "blocks": 0,
+    "turnovers": 2,
+    "fg_pct": 0.563,
+    "triple_double": true
+  },
+  {
     "date": "Mar 22, 2026",
     "opponent": "POR",
     "home": true,
