@@ -1,5 +1,19 @@
 [
   {
+    "date": "Apr 01, 2026",
+    "opponent": "UTA",
+    "home": false,
+    "minutes": 33,
+    "points": 15,
+    "rebounds": 17,
+    "assists": 12,
+    "steals": 0,
+    "blocks": 0,
+    "turnovers": 5,
+    "fg_pct": 0.5,
+    "triple_double": true
+  },
+  {
     "date": "Mar 29, 2026",
     "opponent": "GSW",
     "home": true,
