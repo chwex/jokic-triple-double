@@ -1,5 +1,19 @@
 [
   {
+    "date": "Apr 04, 2026",
+    "opponent": "SAS",
+    "home": true,
+    "minutes": 44,
+    "points": 40,
+    "rebounds": 8,
+    "assists": 13,
+    "steals": 0,
+    "blocks": 3,
+    "turnovers": 0,
+    "fg_pct": 0.52,
+    "triple_double": false
+  },
+  {
     "date": "Apr 01, 2026",
     "opponent": "UTA",
     "home": false,
