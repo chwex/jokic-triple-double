@@ -1,5 +1,19 @@
 [
   {
+    "date": "Apr 06, 2026",
+    "opponent": "POR",
+    "home": true,
+    "minutes": 43,
+    "points": 35,
+    "rebounds": 14,
+    "assists": 13,
+    "steals": 5,
+    "blocks": 2,
+    "turnovers": 6,
+    "fg_pct": 0.484,
+    "triple_double": true
+  },
+  {
     "date": "Apr 04, 2026",
     "opponent": "SAS",
     "home": true,
