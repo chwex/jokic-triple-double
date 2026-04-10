@@ -1,5 +1,19 @@
 [
   {
+    "date": "Apr 08, 2026",
+    "opponent": "MEM",
+    "home": true,
+    "minutes": 31,
+    "points": 14,
+    "rebounds": 16,
+    "assists": 10,
+    "steals": 2,
+    "blocks": 0,
+    "turnovers": 2,
+    "fg_pct": 0.625,
+    "triple_double": true
+  },
+  {
     "date": "Apr 06, 2026",
     "opponent": "POR",
     "home": true,
